@@ -24,19 +24,3 @@ string+= "]"
 towns = open("NewJerseyTowns.txt", "w")
 towns.write(string)
 towns.close()
-		
-	
-
-
-
-'''
-name_box = soup.find_all('strong')
-websites = soup.find_all('a', attrs={'class': 'button webstats-website-click navigable'})
-for item in name_box:
-	name = item.text.strip()		
-	if name not in crap and "Results:" not in name:
-		print(name)
-for website in websites: 
-	website = website['href']
-	print(website)
-'''
